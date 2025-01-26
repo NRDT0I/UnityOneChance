@@ -23,7 +23,7 @@ public class MovementScript : MonoBehaviour
        magnitude = Mathf.Clamp01(magnitude);
        transform.Translate(moveDirection * speed * Time.deltaTime, Space.World);
        
-       if(moveDirection != Vector3.up)
+       if(moveDirection != Vector3.zero)
        {
        	Quaternion toRotate = Quaternion.LookRotation(moveDirection, Vector3.up);
        	transform.rotation = Quaternion.RotateTowards(transform.rotation, toRotate, rotationSpeed * Time.deltaTime);
