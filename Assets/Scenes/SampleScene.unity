@@ -1089,10 +1089,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72803aedbf299b0488884e624f393fe6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
-  rotationSpeed: 360
-  jumpSpeed: 6
-  isGrounded: 0
+  walkSpeed: 3.5
+  rotationSpeed: 480
+  jumpForce: 5.2
+  gravity: -16
+  airControl: 1.5
+  deceleration: 32
+  smoothAcceleration: 10
 --- !u!136 &1480433927
 CapsuleCollider:
   m_ObjectHideFlags: 0
